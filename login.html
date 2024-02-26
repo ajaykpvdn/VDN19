@@ -177,4 +177,10 @@
           b.innerHTML = "!Scroll down and read the message!";
         });
     }
+    window.onload = function() {
+    var carousel = document.querySelector('#carouselExampleIndicators');
+    var carouselInstance = new bootstrap.Carousel(carousel, {
+      interval: 20000 // Adjust the interval as needed (milliseconds)
+    });
+  };
 </script>
